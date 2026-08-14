@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohan N — Java Full Stack Developer</title>
+<meta name="description" content="Rohan N — Java Full Stack Developer. Spring Boot, React, MySQL. Also building in embedded systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="#top" class="nav__brand">
+    <img src="assets/rohan-dp.jpg" alt="Rohan N" class="nav__dp">
+    <span id="navBrandText"></span><span class="nav__cursor">_</span>
+  </a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="#about"><span class="nav__num">01</span>About</a></li>
+    <li><a href="#stack"><span class="nav__num">02</span>Stack</a></li>
+    <li><a href="#projects"><span class="nav__num">03</span>Projects</a></li>
+    <li><a href="#embedded"><span class="nav__num">04</span>Embedded</a></li>
+    <li><a href="assets/Rohan_N_Resume.pdf" download class="nav__resume">⬇ Resume</a></li>
+    <li><a href="#contact" class="nav__cta">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero__bg"></div>
+  <div class="hero__grid">
+    <div class="hero__copy">
+      <div class="eyebrow-row">
+        <p class="eyebrow"><span class="eyebrow__dot"></span> Available for full stack roles</p>
+        <p class="eyebrow eyebrow--grad">Graduating Batch 2026 · Electronics &amp; Communication Engineering</p>
+      </div>
+      <h1 class="hero__title">
+        Rohan N thinks in
+        <span class="grad-text">software</span>,
+        builds in
+        <span class="grad-text">hardware.</span>
+      </h1>
+      <p class="hero__sub">
+        A hybrid engineer — <strong>Java Full Stack Developer</strong> (Spring Boot,
+        React, MySQL) with an electronics engineering core. Software gives me room
+        to think through a problem; hardware makes me prove that thinking actually
+        works in the real world.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+      </div>
+      <div class="hero__meta">
+        <span>Mandya, Karnataka, India</span>
+        <span class="hero__meta-sep">·</span>
+        <span>ECE, P.E.S College of Engineering</span>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <div class="photo-frame">
+        <img src="assets/rohan-hero.jpg" alt="Rohan N" class="photo-frame__img">
+        <div class="photo-frame__tag">
+          <span class="dot dot--live"></span> building in public
+        </div>
+      </div>
+
+      <!-- SIGNATURE ELEMENT: The Stack -->
+      <div class="stackviz" aria-hidden="true">
+        <div class="stackviz__layer" style="--i:0;" data-label="React"></div>
+        <div class="stackviz__layer" style="--i:1;" data-label="Spring Boot"></div>
+        <div class="stackviz__layer" style="--i:2;" data-label="REST API"></div>
+        <div class="stackviz__layer" style="--i:3;" data-label="MySQL"></div>
+        <span class="stackviz__caption">the stack, compiling</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__marquee">
+    <div class="marquee__track">
+      <span>JAVA</span><span>·</span><span>SPRING BOOT</span><span>·</span><span>REACT</span><span>·</span>
+      <span>MYSQL</span><span>·</span><span>REST API</span><span>·</span><span>GIT</span><span>·</span>
+      <span>ANDROID</span><span>·</span><span>ESP32</span><span>·</span>
+      <span>JAVA</span><span>·</span><span>SPRING BOOT</span><span>·</span><span>REACT</span><span>·</span>
+      <span>MYSQL</span><span>·</span><span>REST API</span><span>·</span><span>GIT</span><span>·</span>
+      <span>ANDROID</span><span>·</span><span>ESP32</span><span>·</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section__head">
+      <span class="section__num">01</span>
+      <h2 class="section__title">About</h2>
+    </div>
+    <div class="about__grid">
+      <div class="about__photo">
+        <img src="assets/rohan-about.jpg" alt="Rohan N outdoors">
+      </div>
+      <div class="about__text">
+        <p class="about__lead">
+          I'm an Electronics &amp; Communication Engineer who builds on both sides of
+          the wire — software that runs the logic, hardware that puts it in the
+          physical world.
+        </p>
+        <p>
+          On the software side, I work across the Java Full Stack: designing REST
+          APIs in Spring Boot, wiring them to React front ends, and getting the two
+          sides to actually agree with each other — CORS, serialization, auth, the
+          unglamorous plumbing that makes an app trustworthy.
+        </p>
+        <p>
+          On the hardware side, I design and build embedded systems — wiring
+          sensors and RFID modules to microcontrollers like the ESP32 and
+          engineering the logic that drives them. Software gives me room to
+          think through a problem end to end; hardware forces that thinking to
+          survive contact with the real world. I build with both, not one instead
+          of the other.
+        </p>
+        <div class="about__facts">
+          <div class="fact">
+            <span class="fact__label">Software</span>
+            <span class="fact__value">Java Full Stack Development</span>
+          </div>
+          <div class="fact">
+            <span class="fact__label">Hardware</span>
+            <span class="fact__value">Embedded Systems · Android</span>
+          </div>
+          <div class="fact">
+            <span class="fact__label">Background</span>
+            <span class="fact__value">Electronics &amp; Communication Eng.</span>
+          </div>
+          <div class="fact">
+            <span class="fact__label">Based in</span>
+            <span class="fact__value">Mandya, Karnataka, India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK / SKILLS -->
+  <section class="section section--stack" id="stack">
+    <div class="section__head">
+      <span class="section__num">02</span>
+      <h2 class="section__title">The Stack</h2>
+      <p class="section__desc">What I reach for, split by how often I reach for it.</p>
+    </div>
+
+    <div class="skillrow skillrow--primary">
+      <div class="skillrow__label">
+        <h3>Java Full Stack</h3>
+        <span>primary focus</span>
+      </div>
+      <div class="skillgrid">
+        <div class="skillcard">
+          <span class="skillcard__icon">☕</span>
+          <h4>Java</h4>
+          <p>Core language for backend logic and OOP-driven design.</p>
+        </div>
+        <div class="skillcard">
+          <span class="skillcard__icon">🌱</span>
+          <h4>Spring Boot</h4>
+          <p>REST APIs, dependency injection, security, service layers.</p>
+        </div>
+        <div class="skillcard">
+          <span class="skillcard__icon">⚛️</span>
+          <h4>React</h4>
+          <p>Hooks, routing, state-driven UI wired to live APIs.</p>
+        </div>
+        <div class="skillcard">
+          <span class="skillcard__icon">🗄️</span>
+          <h4>MySQL</h4>
+          <p>Relational schema design, joins, query optimization basics.</p>
+        </div>
+        <div class="skillcard">
+          <span class="skillcard__icon">🔗</span>
+          <h4>REST APIs</h4>
+          <p>Designing and consuming endpoints, status codes done right.</p>
+        </div>
+        <div class="skillcard">
+          <span class="skillcard__icon">🧩</span>
+          <h4>HTML / CSS / JS</h4>
+          <p>Fundamentals underneath every frontend decision I make.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skillrow skillrow--secondary">
+      <div class="skillrow__label">
+        <h3>Also In My Toolkit</h3>
+        <span>tools &amp; platforms</span>
+      </div>
+      <div class="chipwrap">
+        <span class="chip"><img class="chip__icon" src="https://cdn.simpleicons.org/github/E4E4E7" alt=""> Git &amp; GitHub</span>
+        <span class="chip"><img class="chip__icon" src="https://cdn.simpleicons.org/androidstudio/3DDC84" alt=""> Android Studio</span>
+        <span class="chip"><img class="chip__icon" src="https://cdn.simpleicons.org/postman/FF6C37" alt=""> Postman</span>
+        <span class="chip"><img class="chip__icon" src="https://cdn.simpleicons.org/visualstudiocode/007ACC" alt=""> VS Code</span>
+        <span class="chip"><img class="chip__icon" src="https://cdn.simpleicons.org/thunderclient/FF9800" alt=""> Thunder Client</span>
+        <span class="chip"><img class="chip__icon" src="https://cdn.simpleicons.org/firebase/FFCA28" alt=""> Firebase</span>
+        <span class="chip"><img class="chip__icon" src="https://cdn.simpleicons.org/c/A8B9CC" alt=""> C</span>
+        <span class="chip">Data Structures &amp; Algorithms</span>
+        <span class="chip"><img class="chip__icon" src="https://cdn.simpleicons.org/docker/2496ED" alt=""> Docker</span>
+        <span class="chip"><img class="chip__icon" src="https://cdn.simpleicons.org/vercel/E4E4E7" alt=""> Vercel</span>
+        <span class="chip"><img class="chip__icon" src="https://cdn.simpleicons.org/netlify/00C7B7" alt=""> Netlify</span>
+        <span class="chip"><img class="chip__icon" src="https://cdn.simpleicons.org/render/46E3B7" alt=""> Render</span>
+        <span class="chip"><img class="chip__icon" src="https://cdn.simpleicons.org/microsoftazure/0089D6" alt=""> Microsoft Azure</span>
+        <span class="chip"><img class="chip__icon" src="https://cdn.simpleicons.org/amazonaws/FF9900" alt=""> AWS</span>
+        <span class="chip"><img class="chip__icon" src="https://cdn.simpleicons.org/googlecloud/4285F4" alt=""> Google Cloud</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section__head">
+      <span class="section__num">03</span>
+      <h2 class="section__title">Full Stack Projects</h2>
+      <p class="section__desc">The ones built end to end — API, database, UI.</p>
+    </div>
+
+    <div class="projects">
+      <article class="project project--featured">
+        <div class="project__tag">Featured</div>
+        <h3 class="project__title">E-Commerce Platform</h3>
+        <p class="project__desc">
+          A complete e-commerce application — product catalog, cart, and order flow —
+          built on a Spring Boot REST backend with a React frontend and MySQL for
+          persistence. Handled the real-world mess: field casing mismatches, CORS,
+          Lombok/Jackson quirks, all debugged and resolved. Deployed end to end —
+          React frontend on Vercel, Spring Boot backend on Render, MySQL running on
+          Aiven cloud.
+        </p>
+        <div class="project__stack">
+          <span>React</span><span>Spring Boot</span><span>Java</span><span>MySQL</span><span>REST API</span>
+        </div>
+        <a href="https://e-commerce-full-stack-rohan.vercel.app/" target="_blank" rel="noopener" class="project__link">Visit Website →</a>
+      </article>
+
+      <article class="project">
+        <h3 class="project__title">Command Tracker</h3>
+        <p class="project__desc">
+          A full stack tracker for Linux and Windows commands — stores, organizes,
+          and retrieves them through a Spring Boot REST API, with an HTML/CSS/JS
+          frontend on top. Deployed end to end — frontend on Netlify, Spring Boot
+          backend on Render, MySQL running on Aiven cloud.
+        </p>
+        <div class="project__stack">
+          <span>Java</span><span>Spring Boot</span><span>REST API</span><span>HTML/CSS/JS</span>
+        </div>
+        <a href="https://command-lines-rohan.netlify.app/" target="_blank" rel="noopener" class="project__link">Visit Website →</a>
+      </article>
+
+      <article class="project">
+        <h3 class="project__title">GitHub Finder</h3>
+        <p class="project__desc">
+          Search GitHub profiles and repositories in real time using the public
+          GitHub API.
+        </p>
+        <div class="project__stack">
+          <span>React</span><span>JavaScript</span><span>GitHub API</span>
+        </div>
+        <a href="https://github-finder-rohan.netlify.app/" target="_blank" rel="noopener" class="project__link">Visit Website →</a>
+      </article>
+
+      <article class="project">
+        <h3 class="project__title">Movie Finder</h3>
+        <p class="project__desc">
+          A movie search app with live results, posters, and details pulled from a
+          public movie database API.
+        </p>
+        <div class="project__stack">
+          <span>React</span><span>JavaScript</span><span>OMDB API</span>
+        </div>
+        <a href="https://movie-finder-rohann.netlify.app/" target="_blank" rel="noopener" class="project__link">Visit Website →</a>
+      </article>
+
+      <article class="project">
+        <h3 class="project__title">Android Login Authentication App</h3>
+        <p class="project__desc">
+          Secure Android login and sign-up flow using Firebase Authentication with
+          Gmail verification, backed by Firebase Realtime Database.
+        </p>
+        <div class="project__stack">
+          <span>Android Studio</span><span>Java</span><span>Firebase</span>
+        </div>
+        <div class="project__linkrow">
+          <a href="https://rohann1818.github.io/login-app/" target="_blank" rel="noopener" class="project__link">Visit Website →</a>
+          <a href="assets/login-app.apk" download class="project__link project__link--download">⬇ Download APK</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <h3 class="project__title">Weather Forecast Website</h3>
+        <p class="project__desc">
+          A responsive weather site pulling real-time forecast data through API
+          integration.
+        </p>
+        <div class="project__stack">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Weather API</span>
+        </div>
+        <a href="https://rohann1818.github.io/weather---today/" target="_blank" rel="noopener" class="project__link">Visit Website →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- EMBEDDED / OTHER -->
+  <section class="section section--dark" id="embedded">
+    <div class="section__head">
+      <span class="section__num">04</span>
+      <h2 class="section__title">The Hardware Half: Embedded &amp; Android</h2>
+      <p class="section__desc">Not a side project — the other half of how I build.</p>
+    </div>
+
+    <div class="projects projects--embedded">
+      <article class="project project--dark">
+        <h3 class="project__title">Autonomous Follow-Trolley</h3>
+        <p class="project__desc">
+          A supermarket assistant trolley that follows the customer automatically.
+          An ESP32 reads an RFID card carried by the customer — the trolley tracks
+          the card and follows them through the store as they load items in.
+        </p>
+        <div class="project__stack">
+          <span>ESP32</span><span>RFID</span><span>C</span><span>Embedded Systems</span>
+        </div>
+      </article>
+
+      <article class="project project--dark">
+        <h3 class="project__title">Chess Engine</h3>
+        <p class="project__desc">
+          A chess engine and game renderer built from scratch — board logic, move
+          rules, and real-time rendering.
+        </p>
+        <div class="project__stack">
+          <span>C</span><span>SDL2</span><span>OpenGL</span>
+        </div>
+        <a href="https://github.com/RohanN1818/c-chess-engin-sdl2/releases/download/v10.0/rohan_chess_engin.zip" class="project__link project__link--download">⬇ Download for Windows</a>
+      </article>
+
+      <article class="project project--dark">
+        <h3 class="project__title">Dynamic Island for Android</h3>
+        <p class="project__desc">
+          An Android implementation of a dynamic-island-style notification
+          interface.
+        </p>
+        <div class="project__stack">
+          <span>Android Studio</span><span>Java</span>
+        </div>
+        <a href="assets/dynamic-island.apk" download class="project__link project__link--download">⬇ Download APK</a>
+      </article>
+
+      <article class="project project--dark">
+        <h3 class="project__title">IoT Vehicle Anti-Theft System</h3>
+        <p class="project__desc">
+          Engineering capstone project — RFID-based vehicle authentication running
+          on an ESP32.
+        </p>
+        <div class="project__stack">
+          <span>ESP32</span><span>RFID</span><span>C</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--contact" id="contact">
+    <div class="contact__inner">
+      <span class="section__num">05</span>
+      <h2 class="contact__title">Let's build something.</h2>
+      <p class="contact__desc">
+        Open to Java Full Stack Developer roles — service-based, product, or
+        startup. Reach out directly.
+      </p>
+      <div class="contact__links">
+        <a href="mailto:rohannrohan90@gmail.com" class="contact__link">
+          <span class="contact__link-label">Email</span>
+          <span class="contact__link-value">rohannrohan90@gmail.com</span>
+        </a>
+        <a href="https://github.com/RohanN1818" target="_blank" rel="noopener" class="contact__link">
+          <span class="contact__link-label">GitHub</span>
+          <span class="contact__link-value">github.com/RohanN1818</span>
+        </a>
+        <a href="https://www.linkedin.com/in/rohan-n-53330b260" target="_blank" rel="noopener" class="contact__link">
+          <span class="contact__link-label">LinkedIn</span>
+          <span class="contact__link-value">linkedin.com/in/rohan-n</span>
+        </a>
+        <a href="tel:+917892135939" class="contact__link">
+          <span class="contact__link-label">Phone</span>
+          <span class="contact__link-value">+91 78921 35939</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>© <span id="year"></span> Rohan N</span>
+  <span>Built with HTML, CSS &amp; JS</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
